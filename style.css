@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+  }
+  body{
+    width:1440px;
+    text-align:center;
+  } 
+  header{
+    width: 100%;
+    background-color:rgba(250, 85, 79, 0.931);
+    background-image: url("images/bg-pattern-intro-desktop.svg");
+    background-size:auto;
+    background-position:-350px -1300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 0 120px;
+  }
+  nav{
+    width:77%;
+    margin-top:65px;
+    display:flex;
+    align-items: center;
+    position:relative;
+  }
+  #link-1{
+    margin-left:70px;
+    position:relative;
+    cursor:pointer;
+    font-family: 'Ubuntu' sans-serif;
+  }
+  #link-2{
+    margin-left:40px;
+    position:relative;
+    font-family: 'Ubuntu' sans-serif;
+  }
+  #link-3{
+    margin-left:40px;
+    position:relative;
+    font-family: 'Ubuntu' sans-serif;
+  }
+  .dropbtn{
+      font-size: larger;
+      color:white;
+      background-color: rgba(0,0,0,0);
+      border: none;      
+  }
+  .menu-items{
+        display: none;
+        position: absolute;
+        min-width: 100px;
+        
+  }
+  .menu-items a{
+    display:block;
+    padding: 14px 16px; 
+    background-color: white;
+    text-align: left;
+    text-decoration:none;
+    color:black;
+    font-family: sans-serif;
+  }
+  .menu-items a:hover{
+    background-color: grey;
+  }
+  .dropbtn:hover + .menu-items{
+        display:block;
+  }
+  .btn2{
+    position:absolute;
+    right:0;
+    width:140px;
+    height:50px;
+    border:none;
+    border-radius:50px;
+    color: rgb(248, 64, 64);
+    font-family: 'Ubuntu' sans-serif;
+  }
+  .btn1
+  {
+    position:absolute;
+    right:120px;
+    background-color: rgba(0,0,0,0);
+    color:white;  
+  }
+  #second{
+         width:77%;
+         text-align:center;
+         font-family: 'Overpass', sans-serif;
+        }
+       #second h1{
+         color:white;
+          font-size: 60px;
+          margin-top:125px;
+        }
+      #second p{
+             margin-top:12px;
+            font-size: 21px;
+            color:white;
+        }
+        #second button{
+          margin-top:45px;
+          margin-bottom:150px;
+          margin-right:20px;
+          width:130px;
+          height:50px;
+          border:none;
+          background-color: white;
+          color:rgb(248, 64, 64);
+          border-radius: 30px;
+          font-size: 14px;
+        }
+        #second #bastard{
+          border:2px solid white;
+          background-color: rgba(0,0,0,0);
+          color:white;
+        }
+        #section-2{
+          width:100%;
+          height:950px;
+          overflow:hidden;
+          margin-top:100px;
+          position:relative;
+        }
+       #section-2 h1{
+         margin-top:80px;
+          font-family: 'Overpass', sans-serif;
+          font-size: 40px;
+          color:rgb(0, 98, 255);
+        }
+        #section-2 svg{
+          position:absolute;
+          top:0;
+          right:-250px;
+        }
+        #section-2 #par-1{
+          
+          width:47%;
+          text-align: left;
+          padding-left:160px;
+        }
+        #section-2 #par-2{
+          
+          width: 47%;
+          text-align: left;
+          padding-left:160px;
+        }
+        #par-1 h1
+        {
+          margin-top:100px;
+          font-family: 'Overpass', sans-serif;
+          font-size: 30px;
+          color:rgb(0, 98, 255);
+        }
+        #par-2 h1{
+          font-family: 'Overpass', sans-serif;
+          font-size: 30px;
+          color:rgb(0, 98, 255);
+        }
+        #section-2 p{
+          margin-top:30px;
+          font-family: 'Ubuntu', sans-serif;
+          opacity: 0.6;
+          line-height: 25px;
+        }
+        #section-3{
+          width:100%;
+          display:flex;
+          justify-content: end;
+          overflow:hidden;
+          background-color:#2D2E40;
+          border-radius: 0 100px 0 100px;
+          
+          
+        }
+        #par-3{
+          width:50%;
+          text-align: left;
+        }
+
+        #par-3 h1{
+          margin-top:110px;
+          font-family: 'Overpass', sans-serif;
+          font-size: 38px;
+          color:white;
+        }
+        #par-3 p{
+          margin-top:25px;
+          padding-right:200px;
+          font-family: 'Ubuntu', sans-serif;
+          color:white;
+          opacity:0.8;
+          margin-bottom:110px;
+          line-height: 27px;
+        }
+    #section-4{
+      margin-top:100px;
+      margin-bottom: 130px;
+      width:100%;
+      height:786px;
+      overflow:hidden;
+      position:relative;
+      display:flex;
+      justify-content:flex-end;
+    }
+    
+    #section-4 svg{
+      position:absolute;
+      top:0;
+      left:-250px;
+    }
+    #container{
+      width:50%;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    }
+    #par-4{
+      width:100%;      
+      text-align: left;
+    }
+    #container h1{
+          margin-top:100px;
+          font-family: 'Overpass', sans-serif;
+          font-size: 30px;
+          color:rgb(0, 98, 255);
+    }
+    #container p{
+          margin-top:30px;
+          font-family: 'Ubuntu', sans-serif;
+          opacity: 0.6;
+          line-height: 25px;
+          padding-right:200px;
+    }          
+    #par-5{
+      width:100%;
+      text-align: left;
+    }
+    #section-5{
+      width:100%;
+      background-color: #2D2E40;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       position:relative;
+       border-radius:0 150px 0 0;
+      }
+      #section-5 svg{
+        position:absolute;
+        left:150px;
+        top:50px;
+      }
+    #container-3{
+      display:flex;
+      justify-content:flex-start;
+      font-family: 'Ubuntu', sans-serif;
+      margin-top:50px;
+      margin-bottom: 50px;
+      }
+    #container-3 p{
+      padding:10px;
+      text-align: left;
+      color:white;
+      opacity:0.8;
+    }
+    #container-3 a{
+      font-family: 'Ubuntu', sans-serif;
+      color:white;
+      text-align:left;
+      text-decoration: none;
+      opacity:0.7;
+      padding:10px;
+      display:block;
+    }
+    #par21{
+      margin-right: 100px;
+    }
+    #par22{
+      margin-right:100px;
+      margin-left:100px;
+    }
+    #par23{
+      margin-left:100px;
+    }
+
+    @media only screen and (min-width:1440px)
+    {
+      body{
+        width:100%;
+      }
+    }

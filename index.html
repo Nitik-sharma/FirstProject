@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | [Blogr]</title>
+
+  
+  <style>
+
+  *{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+  }
+  body{
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction:column ;
+    background-color: hsl(240, 2%, 79%);
+  }
+   header{
+     width:100%;
+background-color:  hsl(356, 100%, 66%);    
+background-image: url("images/bg-pattern-intro-desktop.svg");
+background-size: auto;
+background-position: -550px -1300px;
+border-radius: 0% 0% 0% 20%;
+
+   }
+   #icon{
+     
+     margin:40px 0px 0px 50px;
+   }
+   #box{
+     display: flex;
+   }
+   nav{
+     margin: 50px 0px 0px 60px;
+    
+   }
+nav select{
+  margin:0px 0px 0px 20px;
+  background-color: hsl(356, 100%, 66%);
+  border:1px solid hsl(356, 100%, 66%);
+  color:white;
+}
+nav select:hover{
+  background-color: white;
+}
+
+#btn{
+  margin:50px 0px 0px 450px;
+}
+#btn1 ,#btn2{
+  width:120px;
+  height:50px;
+  margin-right: 50px;
+  border: 1px solid hsl(356, 100%, 66%);
+  background-color: hsl(356, 100%, 66%);
+  color:white;
+}
+#btn2{
+  background-color: white;
+  color:hsl(356, 100%, 66%);
+  border-radius: 34px;
+}
+#box2{
+  margin:70px 0px 0px 400px;
+
+}
+#box2 h1{
+  color:white;
+}
+#box2 h5{
+  margin:20px 0px 0px 60px;
+  color: white;
+}
+#btn-1{
+  margin: 80px 0px 100px 100px;
+}
+#btn3,#btn4{
+  width:90px ;
+  height:30px;
+  border: 1px solid white;
+  background-color: white;
+  color:hsl(356, 100%, 66%);
+  margin-right: 40px;
+  border-radius: 43px;
+}
+#btn4{
+  background-color: hsl(356, 100%, 66%);
+  color:white;
+}
+main{
+  width:100%;
+  background:hsl(240, 2%, 79%);
+}
+#box3{
+  width:100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+main h1{
+  margin:70px 0px 50px 500px;
+}
+#photo svg{
+  width:100%;
+}
+#para{
+  padding: 30px 30px 30px 30px;
+  margin: 160px 0px 0px 0px;
+}
+#para h4,#para p{
+  margin: 20px 0px 0px 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+#para p{
+color:beige;
+}
+#middle{
+  width:100%;
+  height:470px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background:#2D2E40;
+  border-radius: 0% 0% 0% 30px;
+ 
+}
+#photo1 svg{
+
+  max-width: 100%;
+}
+#something-write{
+  margin:120px 0px 0px 0px;
+  color:antiquewhite;
+}
+#something-write h1{
+  margin:20px 40px 20px 40px;
+}
+#something-write p{
+margin: 30px 50px 30px 50px;
+color: hsl(240, 2%, 79%);
+}
+
+#photo1{
+  background-image: url("images/bg-pattern-circles.svg");
+  background-size: auto;
+  background-repeat: cover;
+ background-repeat: no-repeat;
+  background-position: -390px -530px;
+}
+#content{
+  width:100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+#image img{
+  max-width: 100%;
+ margin-top: 150px;
+ margin-left:-150px ;
+}
+#write{
+  margin-top: 220px;
+}
+#write h4{
+margin: 50px 50px 50px 50px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 700;
+font-size: larger;
+color:hsl(237, 17%, 21%);
+}
+#write p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 700;
+font-size: larger;
+margin:0px 30px 0px 30px;
+color:white;
+}
+footer{
+  width: 100%;
+  margin-top: 50px;
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0px 100px 0px 0px;
+}
+#all{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+ margin-bottom:70px;
+}
+#one img{
+margin:70px 40px 40px  50px;
+}
+#icons p,#icons1 p,#icons2 p{
+  margin-top: 60px;
+  color: white;
+}
+#icons div,#icons1 div ,#icons2 div{
+  margin-top: 20px;
+}
+#icons>div>a,#icons1>div>a,#icons2>div>a{
+  color:white;
+  text-decoration: none;
+  
+}
+
+
+
+
+  </style>
+</head>
+<body>
+<header>
+
+<div id="box">
+  <img src="images/logo.svg" alt="" id="icon">
+ <nav>
+
+  <select di="link-1">
+    <option value=" product"> product</option>
+    <option value="Overview">Overview</option>
+    <option value="Pricing">Pricing</option>
+    <option value="Marketplace">Marketplace</option>
+    <option value=" Features"> Features</option>
+    <option value="Integrations">Integrations
+    </option>
+  </select>
+  <select name="Company" id="link-2">
+    <option value="Company">Company</option>
+    <option value="About">About</option>
+    <option value=" Team"> Team</option>
+    <option value=" Blog"> Blog</option>
+    <option value=" Careers"> Careers</option>
+  </select>
+ <select name=" Connect" id="link-3">
+   <option value="Connect">Connect</option>
+   <option value=" Contact"> Contact</option>
+   <option value=" Newsletter"> Newsletter</option>
+   <option value=" LinkedIn"> LinkedIn</option>
+ </select>
+</nav>
+<section id="btn">
+<button id="btn1">
+  Login
+</button>
+<button id="btn2">
+  Sign Up
+</button>
+</section>
+</div>
+<div id="box2">
+  <h1>  A modern publishing platform</h1>
+  <h5> Grow your audience and build your online brand</h5>
+  <section id="btn-1">
+<button id="btn3"> Start for Free
+  </button>
+<button id="btn4">Learn More</button>
+  </section>
+</div>
+</header>
+  <main>
+    <h1>Designed for the future</h1>
+    <div id="box3">
+      <section id="para">
+<h4>Introducing an extensible editor</h4>
+<p> Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.</p>
+  <h4> Robust content management</h4>
+  <p>
+    Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+  </p>
+      </section>
+      <section id="photo">
+<svg width="925" height="882" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="27.881%" x2="100%" y2="72.119%" id="c"><stop stop-color="#FF8F71" offset="0%"/><stop stop-color="#FF3E55" offset="100%"/></linearGradient><linearGradient x1="0%" y1="41.725%" x2="100%" y2="58.275%" id="e"><stop stop-color="#FF8F71" offset="0%"/><stop stop-color="#FF3E55" offset="100%"/></linearGradient><filter x="-10.9%" y="-11.7%" width="121.8%" height="132.8%" filterUnits="objectBoundingBox" id="b"><feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0" in="shadowBlurOuter1"/></filter><rect id="a" x="0" y="0" width="642" height="427" rx="15"/></defs><g transform="translate(40)" fill="none" fill-rule="evenodd"><rect fill="#2D2E40" opacity=".08" transform="matrix(1 0 0 -1 0 890)" x="145" y="144" width="600" height="602" rx="300"/><rect stroke="#2D2E40" opacity=".5" transform="matrix(1 0 0 -1 0 882)" x="105.5" y="100.5" width="679" height="681" rx="339.5"/><rect stroke="#2D2E40" opacity=".25" transform="matrix(1 0 0 -1 0 882)" x="5.5" y=".5" width="879" height="881" rx="439.5"/><g transform="translate(0 242)"><mask id="d" fill="#fff"><use xlink:href="#a"/></mask><g fill-rule="nonzero"><use fill="#000" filter="url(#b)" xlink:href="#a"/><use fill="url(#c)" xlink:href="#a"/></g><path d="M3 125h636a3 3 0 013 3v296a3 3 0 01-3 3H3a3 3 0 01-3-3V128a3 3 0 013-3z" fill="#2D2E40" fill-rule="nonzero" mask="url(#d)"/><rect fill="#FFF" fill-rule="nonzero" mask="url(#d)" x="90.523" y="47.709" width="135.785" height="137.165" rx="3"/><ellipse fill="#2D2E40" mask="url(#d)" cx="158.416" cy="116.888" rx="39.306" ry="39.36"/><rect fill="#FFF" fill-rule="nonzero" mask="url(#d)" x="248.939" y="47.709" width="302.538" height="325.617" rx="3"/></g><path d="M209 284c47.125-73.367 81.977-113.013 104.557-118.938 33.87-8.886 23.765 83.14 72.535 72.473 48.77-10.666 54.716-103.974 91.603-108.37 36.887-4.397 56.402 80.946 72.515 88.81 10.742 5.241 24.005-6.094 39.79-34.007" stroke="url(#e)" stroke-width="8" stroke-linecap="round" transform="translate(0 242)"/></g></svg>
+      </section>
+    </div>
+  </main>
+  <div id="middle">
+<section id="photo1">
+  <img src="images/illustration-phones.svg" alt="">
+
+
+</section>
+<sectio id="something-write">
+<h1> State of the Art Infrastructure</h1>
+<p>
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+</p>
+</sectio>
+  </div>
+  <div id="content">
+    <section id="image">
+      <img src="images/illustration-laptop-desktop.svg" alt="">
+     </section>
+    <section id="write">
+      <h4>Free, open, simple</h4>
+      <p> Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
+      <h4> Powerful tooling</h4>
+      <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.
+      </p>
+    </section>
+  </div>
+  <footer>
+    <div id="all">
+    <section id="one"> 
+
+    <img src="images/logo.svg" alt="">
+  </section>
+  <section id="icons">
+
+  <p><b>product</b></p><br>
+  <div><a href="">Overview</a></div>
+ <div> <a href=""> Pricing</a> </div>
+  <div><a href=""> Marketplace</a></div>
+  <div><a href="">Features</a></div>
+  <div><a href="">Integrations</a></div>
+
+  </section>
+  <section id="icons1">
+ <p><b>Company</b></p><br>
+ <div><a href="">About</a></div>
+
+<div><a href="">Team</a></div>
+<div><a href=""> Blog</a></div>
+<div><a href="">Careers</a></div>
+  </section>
+  <section id="icons2">
+<p><b>Connect</b>
+</p><br>
+<div><a href="">Contact</a></div>
+<div><a href="">Newsletter</a></div>
+<div><a href="">LinkedIn</a></div>
+  </section>
+</div>
+  </footer>
+</body>
+</html>
